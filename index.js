@@ -17,10 +17,10 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   var password;
 
-  password = make_passwd(13, 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890');
+  password = make_passwd(11, 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890');
 
   response.type('text/plain');
-  response.send(password);
+  response.send("https://www.youtube.com/watch?v=" + password);
 });
 
 
