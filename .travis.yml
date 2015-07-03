@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "0.12"
+service_name: travis-ci.org
+repo_token: 6iIdksPlIq72kTXlqKOpbnzDU4QSIT1iF
+deploy:
+  provider: heroku
+  api_key:
+    secure: 115137d4-bb82-4987-a63d-7f458221bd69
+  app: streamings
+  on:
+    repo: CarlosTWMF/streamings
